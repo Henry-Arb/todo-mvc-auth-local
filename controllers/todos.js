@@ -20,10 +20,14 @@ module.exports = {
             console.log(err)
         }
     },
+    
     markComplete: async (req, res)=>{
         try{
             await Todo.findOneAndUpdate({_id:req.body.todoIdFromJSFile},{
-                completed: true
+                completed: true,
+                duration: req.body.timeDurationFromJSFile
+
+                
             })
             console.log('Marked Complete')
             res.json('Marked Complete')

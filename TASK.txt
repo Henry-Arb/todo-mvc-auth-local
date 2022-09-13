@@ -1,0 +1,25 @@
+General function: user enter task name to have task showing on task list. When clicking start button, timer starts and it will automatically switch to break session. User needs to click start button again for another session. This app will track how many session and time in minutes (start button clicked) user used to complete a task.
+
+1) add task creation date, duration and session number as schema to db (now)
+ who: John
+2) change color when reach certain time (front-end)
+  10 days, 20 days
+  date now - creation date
+ who: Tasha
+3) pomodoro timer session
+  a) set countdown 25 min and break time 5min,
+   automatically start break time after count down ends
+   who: Christine
+  b) Track how much time (a timer countdown to 0) to db (default to 0)
+   put request -> route -> update db
+   who: Anesia
+  optional: stop button?
+
+4) Front-end to make the whole app PRETTY
+ features needed:
+start and complete buttons,
+area to set session time and break time,
+area to show current timer/break,
+area to show session count
+area to show completed task with session number
+ who: Henry and Jolyn

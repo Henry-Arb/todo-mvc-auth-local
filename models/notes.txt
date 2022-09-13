@@ -1,0 +1,1 @@
+Is the only way the browser can access the database.

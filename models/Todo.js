@@ -12,7 +12,22 @@ const TodoSchema = new mongoose.Schema({
   userId: {
     type: String,
     required: true
+  },
+  sessionCount: {
+    type: Number,
+    default: 0
+  },
+
+  duration: {
+    type: Number,
+    default: 0
+  },
+
+  Date: {
+    type: Date,
+    default: new Date()
   }
+  
 })
 
 module.exports = mongoose.model('Todo', TodoSchema)
